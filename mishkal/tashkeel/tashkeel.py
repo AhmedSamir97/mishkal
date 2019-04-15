@@ -375,7 +375,7 @@ class TashkeelClass:
             mytagmaker  = mysam.tagmaker.tagMaker()
             mytagmaker.encode(_chosen_list[i].get_tags().split(':'))
             mytagmaker.encode(_chosen_list[i].get_type().split(':'))
-            self.logger.info("TaharZe Tags to display '%s' and tagmaker =='%s'", _chosen_list[i].get_tags(),str(mytagmaker)) 
+            #self.logger.info("TaharZe Tags to display '%s' and tagmaker =='%s'", _chosen_list[i].get_tags(),str(mytagmaker)) 
 
             inflect = u"[%s]{%s}"%(str(mytagmaker), mytagmaker.inflect()) +"<br/>"+ inflect;
             if previous >= 0:
